@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:textSize="42sp" 
+	android:stretchColumns="1"
+	android:background="#000000" >
+	<TableRow>
+		<EditText 
+		    android:id="@+id/input" 
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:drawable/editbox_background"
+			android:layout_span="4" 
+			android:textSize="40sp" 
+			android:gravity="right|center_vertical"
+			android:cursorVisible="false" 
+			android:inputType="text"
+			android:lines="1" />
+	</TableRow>
+	
+	<TableRow>
+		<EditText 
+		    android:id="@+id/result" 
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:drawable/editbox_background"
+			android:layout_span="4" 
+			android:textSize="30sp" 
+			android:gravity="right|center_vertical"
+			android:cursorVisible="false" 
+			android:inputType="text"
+			android:lines="1" />
+	</TableRow>
+	
+	<TableRow>	    
+	    <Button 
+	        android:id="@+id/backspace" 
+	        android:layout_width="0sp"
+			android:layout_height="wrap_content" 
+			android:textSize="42sp"
+			android:text="@string/backspace" 
+			android:layout_weight="3" />
+	    
+	    <Button 
+	        android:id="@+id/clear" 
+	        android:layout_width="0sp"
+			android:layout_height="wrap_content" 
+			android:textSize="42sp"
+			android:text="@string/clear" 
+			android:layout_weight="3" />	    
+	    
+	    <Button 
+	        android:id="@+id/divide" 
+	        android:layout_width="0sp"
+			android:layout_height="wrap_content" 
+			android:textSize="42sp"
+			android:text="@string/divide" 
+			android:layout_weight="2" />
+	</TableRow>
+	<TableRow>
+	    
+			<Button android:id="@+id/num7" 
+			    android:layout_width="0sp"
+				android:layout_height="wrap_content" 
+				android:textSize="42sp"
+				android:text="@string/seven"
+				android:layout_weight="1" />
+			
+			<Button android:id="@+id/num8" 
+			    android:layout_width="0sp"
+				android:layout_height="wrap_content" 
+				android:textSize="42sp"
+				android:text="@string/eight" 
+				android:layout_weight="1" />
+			
+			<Button android:id="@+id/num9" 
+			    android:layout_width="0sp"
+				android:layout_height="wrap_content" 
+				android:textSize="42sp"
+				android:text="@string/nine" 
+				android:layout_weight="1" />
+			
+			<Button android:id="@+id/multiply" 
+			    android:layout_width="0sp"
+				android:layout_height="wrap_content" 
+				android:textSize="42sp"
+				android:text="@string/multiply" 
+				android:layout_weight="1" />
+			
+			
+	</TableRow>
+	<TableRow>
+		<Button android:id="@+id/num4" 
+		    android:layout_width="0sp"
+			android:layout_height="wrap_content" 
+			android:textSize="42sp"
+			android:text="@string/four" 
+			android:layout_weight="1" />
+		
+		<Button android:id="@+id/num5" 
+		    android:layout_width="0sp"
+			android:layout_height="wrap_content" 
+			android:textSize="42sp"
+			android:text="@string/five" 
+			android:layout_weight="1" />
+		
+		<Button android:id="@+id/num6" 
+		    android:layout_width="0sp"
+			android:layout_height="wrap_content" 
+			android:textSize="42sp"
+			android:text="@string/six" 
+			android:layout_weight="1" />
+		
+		<Button 
+		    android:id="@+id/sub" 
+		    android:layout_width="0sp"
+			android:layout_height="wrap_content" 
+			android:textSize="42sp"
+			android:text="@string/sub" 
+			android:layout_weight="1" />
+	</TableRow>
+	
+	<TableRow>
+			<Button android:id="@+id/num1" 
+			    android:layout_width="0sp"
+				android:layout_height="wrap_content" 
+				android:textSize="42sp"
+				android:text="@string/one" 
+				android:layout_weight="1" />
+			
+			<Button android:id="@+id/num2" 
+			    android:layout_width="0sp"
+				android:layout_height="wrap_content" 
+				android:textSize="42sp"
+				android:text="@string/two" 
+				android:layout_weight="1" />
+			
+			<Button android:id="@+id/num3" 
+			    android:layout_width="0sp"
+				android:layout_height="wrap_content" 
+				android:textSize="42sp"
+				android:text="@string/three" 
+				android:layout_weight="1" />
+			
+			<Button android:id="@+id/add" 
+			    android:layout_width="0sp"
+				android:layout_height="wrap_content" 
+				android:textSize="42sp"
+				android:text="@string/add" 
+				android:layout_weight="1" />
+			
+	</TableRow>
+	<TableRow>
+			<Button android:id="@+id/num0" 
+			    android:layout_width="0sp"
+				android:layout_height="wrap_content" 
+				android:textSize="42sp"
+				android:text="@string/zero" 
+				android:layout_weight="2" />
+			
+			<Button android:id="@+id/point" 
+			    android:layout_width="0sp"
+				android:layout_height="wrap_content" 
+				android:textSize="42sp"
+				android:text="@string/point" 
+				android:layout_weight="1" />
+			
+			<Button android:id="@+id/equal" 
+			    android:layout_width="0sp"
+				android:layout_height="wrap_content" 
+				android:textSize="42sp"
+				android:text="@string/equal" 
+				android:layout_weight="1" />
+	</TableRow>
+</TableLayout>
