@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class CalculatorActivity extends Activity implements OnClickListener{
 
@@ -79,6 +80,8 @@ public class CalculatorActivity extends Activity implements OnClickListener{
 		backspace.setOnClickListener(this);
 		clear.setOnClickListener(this);
 		
+		Toast.makeText(CalculatorActivity.this, add(10, 12) + "", Toast.LENGTH_LONG)
+		.show();
 	}
 	
 	@Override
@@ -225,6 +228,15 @@ public class CalculatorActivity extends Activity implements OnClickListener{
 		}
 		return false;
 	}
+	
+	public native double add(double num1, double num2);
+	public native double sub(double num1, double num2);
+	public native double mul(double num1, double num2);
+	public native double div(double num1, double num2);
+	
+	static {
+        System.loadLibrary("calculator");
+    }
 	
 	private static final String[] OPERATORS = {"+", "-", "*", "/"};
 	private StringBuilder lastNumBuilder;		// 当前操作数
